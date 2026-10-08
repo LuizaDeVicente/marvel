@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11111a"/><stop offset=".52" stop-color="#09090f"/><stop offset="1" stop-color="#1a0c11"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#e62429" stop-opacity=".62"/><stop offset="1" stop-color="#e62429" stop-opacity="0"/></radialGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff4b50"/><stop offset="1" stop-color="#a10c17"/></linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d9df"/><stop offset="1" stop-color="#747784"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="42"/></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity=".42"/></filter>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <circle cx="795" cy="494" r="365" fill="url(#glow)" filter="url(#blur)"/>
+  <path d="M0 0h1080v12H0z" fill="#e62429"/>
+  <g opacity=".15" stroke="#e62429" stroke-width="2">
+    <path d="M-90 220L940 125M-70 274L990 178M-80 328L1030 228M160 0L76 410M305 0L228 412M450 0L375 415"/>
+  </g>
+  <g transform="translate(850 114)" opacity=".9">
+    <path d="M0-34l8 23 24 1-19 15 7 23L0 14l-20 14 7-23-19-15 24-1z" fill="#e62429"/>
+    <circle r="43" fill="none" stroke="#e62429" stroke-opacity=".38" stroke-width="2"/>
+  </g>
+  <text x="72" y="126" fill="#f2f2f5" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="5">UM NOVO JEITO DE VIVER</text>
+  <text x="72" y="164" fill="#e62429" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="5">O UNIVERSO MARVEL</text>
+  <text x="68" y="323" fill="#fff" font-family="Arial,sans-serif" font-size="101" font-weight="900" letter-spacing="-5">SEU TIME.</text>
+  <text x="68" y="430" fill="#fff" font-family="Arial,sans-serif" font-size="101" font-weight="900" letter-spacing="-5">SUAS</text>
+  <text x="68" y="537" fill="#e62429" font-family="Arial,sans-serif" font-size="101" font-weight="900" letter-spacing="-5">AVENTURAS.</text>
+  <text x="75" y="602" fill="#c5c5cf" font-family="Arial,sans-serif" font-size="28">Descubra personagens, compartilhe ideias</text>
+  <text x="75" y="643" fill="#c5c5cf" font-family="Arial,sans-serif" font-size="28">e encare desafios com outros fãs.</text>
+  <g filter="url(#shadow)">
+    <path d="M0 935h1080v415H0z" fill="#101019"/>
+    <path d="M0 935h1080" stroke="#34343f" stroke-width="2"/>
+    <path d="M0 1038l151-113h90l-92 113zM1080 1001L920 935h-83l159 104z" fill="#e62429" opacity=".82"/>
+    <path d="M0 1065l176-130M1080 1028L881 935" stroke="#f15a60" stroke-opacity=".7" stroke-width="4"/>
+    <g transform="translate(540 983)">
+      <circle r="128" fill="#171a24" stroke="#e62429" stroke-width="7"/>
+      <circle r="108" fill="none" stroke="#e7e7eb" stroke-opacity=".9" stroke-width="3"/>
+      <circle r="87" fill="url(#red)"/>
+      <circle r="61" fill="#d8d9df"/>
+      <circle r="48" fill="#193d66"/>
+      <path d="M0-29l8 21 23 1-18 14 7 22L0 16l-20 13 7-22-18-14 23-1z" fill="#fff"/>
+      <path d="M-196 139q196-68 392 0v120h-392z" fill="#090a10"/>
+      <path d="M-171 141q171-42 342 0" fill="none" stroke="url(#steel)" stroke-width="8" opacity=".7"/>
+    </g>
+    <g transform="translate(540 1186)" text-anchor="middle" font-family="Arial,sans-serif">
+      <text y="0" fill="#fff" font-size="51" font-weight="900" letter-spacing="1">MARVELVERSE</text>
+      <text y="42" fill="#a8a8b4" font-size="20" letter-spacing="4">PERSONAGENS  •  COMUNIDADE  •  DESAFIOS</text>
+    </g>
+    <rect x="352" y="1260" width="376" height="5" rx="3" fill="#e62429"/>
+  </g>
+</svg>

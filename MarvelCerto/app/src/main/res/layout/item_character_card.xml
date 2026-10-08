@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#14141F"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="#1D1D2C"
+            android:contentDescription="Imagem do personagem"
+            tools:src="@android:drawable/ic_menu_gallery"/>
+
+        <!-- Gradiente inferior para leitura do texto -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="bottom"
+            android:background="#CC000000"/>
+
+        <!-- Badge de favorito -->
+        <ImageView
+            android:id="@+id/btnFavorite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="8dp"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_star_outline"
+            android:tint="@color/text_primary"
+            android:contentDescription="Favoritar" android:clickable="true" android:focusable="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Homem de Ferro"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <TextView
+                android:id="@+id/txtRealName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tony Stark"
+                android:textColor="#C9C9D6"
+                android:textSize="11sp"/>
+            <!-- Alignment -->
+            <TextView
+                android:id="@+id/txtAlignment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="good"
+                android:textColor="#FFD700"
+                android:textSize="11sp"/>
+            <TextView
+                android:id="@+id/txtMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:background="#E62429"
+                android:text="Editora"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:text="STR: 0 • POW: 0"/>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

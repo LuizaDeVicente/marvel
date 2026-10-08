@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#111119"/><stop offset="1" stop-color="#08080d"/></linearGradient>
+    <linearGradient id="sunset" x2="0" y2="1"><stop stop-color="#e67652"/><stop offset=".46" stop-color="#7d394c"/><stop offset="1" stop-color="#17202e"/></linearGradient>
+    <linearGradient id="metal" x2=".9" y2="1"><stop stop-color="#f7f2e9"/><stop offset=".45" stop-color="#b8bec9"/><stop offset="1" stop-color="#636b78"/></linearGradient>
+    <linearGradient id="shield" x2=".8" y2="1"><stop stop-color="#f1474e"/><stop offset="1" stop-color="#90131c"/></linearGradient>
+    <radialGradient id="sunGlow"><stop stop-color="#ffd59a" stop-opacity=".95"/><stop offset="1" stop-color="#ffba76" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity=".38"/></filter>
+    <clipPath id="photo"><rect x="72" y="600" width="936" height="750" rx="4"/></clipPath>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <text x="64" y="57" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="700">9:41</text>
+  <g fill="#fff" opacity=".9"><path d="M920 43h7v14h-7zM932 38h7v19h-7zM944 33h7v24h-7z"/><path d="M970 40q16-16 32 0l-4 5q-12-11-24 0zM976 49q10-9 20 0l-4 5q-6-5-12 0z"/><rect x="1017" y="36" width="36" height="20" rx="5" fill="none" stroke="#fff" stroke-width="2"/><rect x="1054" y="42" width="4" height="8" rx="2"/><rect x="1021" y="40" width="27" height="12" rx="3"/></g>
+  <text x="64" y="139" fill="#fff" font-family="Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="-1">MARVEL</text>
+  <text x="241" y="139" fill="#e62429" font-family="Arial,sans-serif" font-size="34" font-weight="700">VERSE</text>
+  <circle cx="944" cy="119" r="27" fill="#191923"/><path d="M934 119h20m-10-10v20" stroke="#e62429" stroke-width="3" stroke-linecap="round"/>
+  <path d="M0 171h1080" stroke="#282832" stroke-width="2"/>
+  <text x="64" y="218" fill="#f2f2f5" font-family="Arial,sans-serif" font-size="22" font-weight="700">HISTÓRIAS</text>
+  <g font-family="Arial,sans-serif" font-size="17" fill="#c4c4ce" text-anchor="middle">
+    <circle cx="113" cy="285" r="46" fill="#e62429"/><circle cx="113" cy="285" r="41" fill="#14141f"/><text x="113" y="292" fill="#f3f3f5" font-size="20" font-weight="700">CA</text><text x="113" y="351">Sua história</text>
+    <circle cx="252" cy="285" r="46" fill="#e62429"/><circle cx="252" cy="285" r="41" fill="#222c3b"/><path d="M232 298q20-42 40 0z" fill="#d4e0eb"/><text x="252" y="351">Thor</text>
+    <circle cx="391" cy="285" r="46" fill="#e62429"/><circle cx="391" cy="285" r="41" fill="#423328"/><circle cx="391" cy="282" r="18" fill="#d4a77d"/><text x="391" y="351">Tony</text>
+    <circle cx="530" cy="285" r="46" fill="#e62429"/><circle cx="530" cy="285" r="41" fill="#282c45"/><path d="M510 299q20-43 40 0z" fill="#b8c2ed"/><text x="530" y="351">Natasha</text>
+    <circle cx="669" cy="285" r="46" fill="#e62429"/><circle cx="669" cy="285" r="41" fill="#384437"/><circle cx="669" cy="282" r="18" fill="#c5a888"/><text x="669" y="351">Bruce</text>
+    <circle cx="808" cy="285" r="46" fill="#e62429"/><circle cx="808" cy="285" r="41" fill="#3d2e3e"/><path d="M788 298q20-43 40 0z" fill="#d7a3bb"/><text x="808" y="351">Wanda</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="48" y="390" width="984" height="1324" rx="26" fill="#15151e" stroke="#292933" stroke-width="2"/>
+    <circle cx="106" cy="456" r="31" fill="#e62429"/><circle cx="106" cy="456" r="26" fill="#182433"/><path d="M84 465q22-40 44 0z" fill="#d9e1eb"/><circle cx="106" cy="447" r="10" fill="#d4b398"/>
+    <text x="155" y="449" fill="#f8f8fa" font-family="Arial,sans-serif" font-size="24" font-weight="700">Capitão América</text>
+    <text x="155" y="480" fill="#9e9eaa" font-family="Arial,sans-serif" font-size="18">agora · Nova York</text>
+    <g fill="#d9d9df"><circle cx="969" cy="447" r="4"/><circle cx="969" cy="460" r="4"/><circle cx="969" cy="473" r="4"/></g>
+    <g clip-path="url(#photo)">
+      <rect x="72" y="600" width="936" height="750" fill="url(#sunset)"/>
+      <circle cx="755" cy="813" r="205" fill="url(#sunGlow)"/>
+      <circle cx="755" cy="813" r="56" fill="#ffd99c" opacity=".88"/>
+      <path d="M72 960l85-92 64 55 94-133 78 110 95-76 97 114 101-131 86 105 88-84 148 132v300H72z" fill="#30303d" opacity=".75"/>
+      <path d="M72 1038l101-122 72 79 72-91 71 88 70-106 102 132 90-101 97 96 86-120 175 145v212H72z" fill="#1d2430"/>
+      <g fill="#111820" opacity=".85">
+        <path d="M93 982h88v369H93zM197 1010h75v341h-75zM290 967h108v384H290zM418 1028h92v323h-92zM529 982h77v369h-77zM627 1038h113v313H627zM756 994h89v357h-89zM861 1020h119v331H861z"/>
+      </g>
+      <g fill="#e5ad78" opacity=".48"><path d="M112 1010h12v18h-12zm28 0h12v18h-12zm-28 40h12v18h-12zm92-6h12v18h-12zm28 0h12v18h-12zm70-35h12v18h-12zm32 0h12v18h-12zm-32 42h12v18h-12zm133 28h12v18h-12zm35-28h12v18h-12zm82-28h12v18h-12zm28 0h12v18h-12zm-28 46h12v18h-12zm111 22h12v18h-12zm35-34h12v18h-12zm107-18h12v18h-12zm33 0h12v18h-12zm-33 44h12v18h-12zm107-28h12v18h-12zm35 0h12v18h-12z"/></g>
+      <path d="M72 1232q226-68 464-34t472-9v161H72z" fill="#0f141d"/>
+      <path d="M72 1294q225-43 469-20t467-8v84H72z" fill="#090d14"/>
+      <path d="M72 1319l936-112v143H72z" fill="url(#metal)" opacity=".85"/>
+      <path d="M72 1329l936-110v131H72z" fill="#242936"/>
+      <path d="M72 1340l936-110" stroke="#78808d" stroke-width="5" opacity=".65"/>
+      <ellipse cx="556" cy="1187" rx="127" ry="47" fill="#070b11" opacity=".48"/>
+      <g transform="translate(557 1172) rotate(-12)">
+        <circle r="112" fill="#17263a" stroke="#111827" stroke-width="9"/>
+        <circle r="99" fill="url(#shield)" stroke="#eaebee" stroke-width="17"/>
+        <circle r="70" fill="#bdc4ce" stroke="#e7e9eb" stroke-width="10"/>
+        <circle r="55" fill="#174b82"/>
+        <path d="M0-31l8 22 23 1-18 14 7 23L0 15l-20 14 7-23-18-14 23-1z" fill="#f7f5ef"/>
+        <circle r="108" fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="4"/>
+      </g>
+      <path d="M111 708h530" stroke="#fff" stroke-opacity=".14" stroke-width="2"/>
+    </g>
+    <g transform="translate(76 1389)" fill="none" stroke="#eeeef2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M27 15c-5-10-22-8-22 5 0 12 22 25 22 25s22-13 22-25c0-13-17-15-22-5z" fill="#e62429" stroke="#e62429"/>
+      <path d="M98 42V6m-14 16h28M84 22l14-15 14 15"/>
+      <path d="M153 10h31v25h-31zM153 10l15 13 16-13"/>
+    </g>
+    <path d="M950 1398v39l-17-11-17 11v-39" fill="none" stroke="#eeeef2" stroke-width="4" stroke-linejoin="round"/>
+    <text x="76" y="1490" fill="#f4f4f6" font-family="Arial,sans-serif" font-size="22" font-weight="700">Curtido por 128 pessoas</text>
+    <text x="76" y="1542" fill="#f0f0f3" font-family="Arial,sans-serif" font-size="23" font-weight="700">Capitão América</text>
+    <text x="287" y="1542" fill="#e0e0e5" font-family="Arial,sans-serif" font-size="23">Treino concluído. Próxima missão?</text>
+    <text x="76" y="1593" fill="#92929e" font-family="Arial,sans-serif" font-size="19">Ver todos os 24 comentários</text>
+    <text x="76" y="1640" fill="#777783" font-family="Arial,sans-serif" font-size="17">HÁ 2 MINUTOS</text>
+  </g>
+  <path d="M0 1784h1080" stroke="#282832" stroke-width="2"/>
+  <g fill="none" stroke="#eeeef2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M91 1826h36v33H91zM98 1818h36v33"/>
+    <circle cx="328" cy="1842" r="15"/><path d="M317 1855l-8 9 1-15"/>
+    <path d="M536 1842l24-16v32zM560 1842h26"/>
+    <circle cx="787" cy="1842" r="16"/><path d="M778 1842h18M787 1833v18"/>
+    <circle cx="977" cy="1835" r="10"/><path d="M958 1865q19-24 38 0"/>
+  </g>
+  <rect x="420" y="1890" width="240" height="8" rx="4" fill="#eeeef2" opacity=".85"/>
+</svg>

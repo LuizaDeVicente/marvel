@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0B12">
+
+    <!-- Conteúdo scrollável -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="164dp"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Olá, Herói"
+                        android:textColor="#9A9AAE"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MARVELVERSE"
+                        android:textColor="#E62429"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:letterSpacing="0.05"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- BUSCA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:background="#1D1D2C"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/ic_menu_search"
+                    app:tint="#6E6E85"
+                    android:contentDescription="Buscar"/>
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="Buscar herói ou vilão..."
+                    android:textColorHint="#6E6E85"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:autofillHints="none"/>
+            </LinearLayout>
+
+            <!-- CHIPS de filtro -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:clipToPadding="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#E62429"
+                        android:id="@+id/filterAll" android:clickable="true" android:focusable="true" android:text="Todos"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#1D1D2C"
+                        android:id="@+id/filterAvengers" android:clickable="true" android:focusable="true" android:text="Vingadores"
+                        android:textColor="#C9C9D6"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#1D1D2C"
+                        android:id="@+id/filterGuardians" android:clickable="true" android:focusable="true" android:text="Guardiões"
+                        android:textColor="#C9C9D6"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#1D1D2C"
+                        android:id="@+id/filterXMen" android:clickable="true" android:focusable="true" android:text="X-Men"
+                        android:textColor="#C9C9D6"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:background="#1D1D2C"
+                        android:id="@+id/filterVillains" android:clickable="true" android:focusable="true" android:text="Vilões"
+                        android:textColor="#C9C9D6"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- SEÇÃO: Em destaque -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Em destaque"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFeatured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_featured"
+                tools:itemCount="3"/>
+
+            <!-- SEÇÃO: Personagens -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Personagens"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A-Z"
+                    android:textColor="#F0B323"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <include layout="@layout/list_state" />
+            <!-- GRID de personagens -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCharacters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/item_character_card"
+                tools:itemCount="8"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- BOTTOM NAVIGATION -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#14141F"
+        app:itemIconTint="#E62429"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu"/>
+
+    <include layout="@layout/quiz_fab" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

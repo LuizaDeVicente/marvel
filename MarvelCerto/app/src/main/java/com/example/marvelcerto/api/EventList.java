@@ -1,0 +1,17 @@
+package com.example.marvelcerto.api;
+
+import com.google.gson.annotations.SerializedName;
+
+public class EventList {
+    @SerializedName("available")
+    public int available;
+
+    @SerializedName("returned")
+    public int returned;
+
+    @SerializedName("collectionURI")
+    public String collectionURI;
+
+    @SerializedName("items")
+    public EventSummary[] items;
+}

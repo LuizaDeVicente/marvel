@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listState" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:gravity="center" android:padding="20dp" android:visibility="gone">
+    <ProgressBar android:id="@+id/listProgress" android:layout_width="32dp" android:layout_height="32dp" android:indeterminateTint="@color/marvel_red" android:visibility="gone" />
+    <TextView android:id="@+id/listMessage" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="8dp" android:gravity="center" android:textColor="@color/text_secondary" android:textSize="14sp" android:accessibilityLiveRegion="polite" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/listRetry" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:minHeight="48dp" android:text="Tentar novamente" android:visibility="gone" />
+</LinearLayout>

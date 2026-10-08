@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MarvelVerse</string>
+    <string name="character_photo">Foto do personagem</string>
+    <string name="favorite">Favoritar</string>
+    <string name="featured">Destaque</string>
+    <string name="notifications">Notificações</string>
+    <string name="search">Buscar</string>
+
+</resources>

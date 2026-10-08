@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/ink">
+    <ImageButton android:id="@+id/btnVoltar" android:layout_width="56dp" android:layout_height="56dp"
+        android:src="@drawable/ic_arrow_back" android:padding="12dp" android:scaleType="fitCenter"
+        android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Voltar" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp"
+        android:id="@+id/pickerTitle" android:text="COM QUEM VAMOS CHAMAR?" android:textColor="@color/text_primary" android:textSize="24sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp"
+        android:id="@+id/pickerSubtitle" android:text="Escolha um personagem para sua chamada virtual." android:textColor="@color/text_secondary" />
+    <EditText android:id="@+id/edtSearch" android:layout_width="match_parent" android:layout_height="56dp" android:layout_margin="16dp"
+        android:hint="Buscar herói ou vilão" android:inputType="text" android:maxLines="1" android:textColor="@color/text_primary" android:textColorHint="@color/text_secondary" />
+    <RadioGroup android:id="@+id/filters" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+        <RadioButton android:id="@+id/filterAll" android:layout_width="wrap_content" android:layout_height="48dp" android:text="Todos" android:checked="true" android:textColor="@color/text_primary" />
+        <RadioButton android:id="@+id/filterHeroes" android:layout_width="wrap_content" android:layout_height="48dp" android:text="Heróis" android:textColor="@color/text_primary" />
+        <RadioButton android:id="@+id/filterVillains" android:layout_width="wrap_content" android:layout_height="48dp" android:text="Vilões" android:textColor="@color/text_primary" />
+    </RadioGroup>
+    <TextView android:id="@+id/txtStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="Carregando personagens…" android:textColor="@color/text_secondary" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnRetry" android:layout_width="wrap_content" android:layout_height="48dp" android:text="Tentar novamente" android:visibility="gone" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCharacters" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:clipToPadding="false" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/ink">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <ImageButton android:id="@+id/btnVoltar" android:layout_width="56dp" android:layout_height="56dp"
+            android:src="@drawable/ic_arrow_back" android:padding="12dp" android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Voltar" />
+        <TextView android:id="@+id/txtCallName" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:padding="16dp" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/text_primary" />
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp"
+        android:paddingBottom="12dp" android:text="CHAMADA VIRTUAL · MARVELVERSE" android:textSize="11sp" android:letterSpacing="0.12" android:textColor="@color/marvel_gold" />
+    <FrameLayout android:id="@+id/callStage" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:id="@+id/imgCharacter" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:scaleType="centerCrop" android:contentDescription="Personagem da chamada" />
+        <com.google.android.material.card.MaterialCardView android:id="@+id/selfCard" android:layout_width="112dp" android:layout_height="160dp"
+            android:layout_gravity="top|end" android:layout_margin="16dp" app:cardCornerRadius="18dp" app:strokeColor="@color/marvel_gold" app:strokeWidth="2dp" app:cardBackgroundColor="@color/ink_2">
+            <androidx.camera.view.PreviewView android:id="@+id/selfPreview" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom"
+                android:background="#990B0B12" android:padding="8dp" android:text="VOCÊ" android:textColor="@color/text_primary" android:textSize="10sp" />
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+    <TextView android:id="@+id/txtStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="12dp" android:gravity="center" android:text="Sua câmera aparece apenas neste aparelho." android:textColor="@color/text_secondary" android:textSize="12sp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:paddingHorizontal="8dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnToggleCamera" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_weight="1" android:text="Câmera" android:textSize="12sp" android:backgroundTint="@color/ink_3" android:textColor="@color/text_primary" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSnapshot" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_weight="1" android:text="Tirar foto" android:textSize="12sp" android:enabled="false" android:backgroundTint="@color/ink_3" android:textColor="@color/text_primary" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnEndCall" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_weight="1" android:text="Encerrar" android:textSize="12sp" android:backgroundTint="@color/marvel_red" android:textColor="@color/text_primary" />
+    </LinearLayout>
+</LinearLayout>

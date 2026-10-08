@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="160dp"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/ink_2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgFeatured"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/featured"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_featured_overlay"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EM DESTAQUE"
+                android:textColor="@color/marvel_red"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:letterSpacing="0.15"/>
+
+            <TextView
+                android:id="@+id/txtFeaturedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                tools:text="Homem-Aranha"/>
+
+            <TextView
+                android:id="@+id/txtFeaturedSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                tools:text="Marvel • STR:100 • POW:80"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11111a"/><stop offset=".55" stop-color="#09090f"/><stop offset="1" stop-color="#1a0c11"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#e62429" stop-opacity=".6"/><stop offset="1" stop-color="#e62429" stop-opacity="0"/></radialGradient>
+    <linearGradient id="scene" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e88962"/><stop offset=".55" stop-color="#49304b"/><stop offset="1" stop-color="#111824"/></linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f24950"/><stop offset="1" stop-color="#a40e1a"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="48"/></filter>
+    <filter id="shadow" x="-30%" y="-20%" width="160%" height="150%"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000" flood-opacity=".6"/></filter>
+    <clipPath id="screen"><rect x="352" y="561" width="376" height="716" rx="32"/></clipPath>
+    <clipPath id="postimg"><rect x="370" y="927" width="340" height="136"/></clipPath>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <circle cx="541" cy="910" r="450" fill="url(#glow)" filter="url(#blur)"/>
+  <path d="M0 0h1080v10H0z" fill="#e62429"/>
+  <g opacity=".14" stroke="#e62429" stroke-width="2"><path d="M-50 245L1020 86M-40 293L1055 130M-30 341L1090 174M210 0L104 401M366 0L260 404M522 0L416 408"/></g>
+  <g transform="translate(884 100)"><circle r="33" fill="none" stroke="#e62429" stroke-opacity=".45" stroke-width="2"/><path d="M0-22l6 15 17 1-13 10 5 17L0 12l-15 9 5-17-13-10 17-1z" fill="#e62429"/></g>
+  <text x="72" y="100" fill="#f2f2f5" font-family="Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="4">UM NOVO JEITO DE VIVER</text>
+  <text x="72" y="134" fill="#e62429" font-family="Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="4">O UNIVERSO MARVEL</text>
+  <text x="66" y="258" fill="#fff" font-family="Arial,sans-serif" font-size="86" font-weight="900" letter-spacing="-4">SEU TIME.</text>
+  <text x="66" y="349" fill="#fff" font-family="Arial,sans-serif" font-size="86" font-weight="900" letter-spacing="-4">SUAS</text>
+  <text x="66" y="440" fill="#e62429" font-family="Arial,sans-serif" font-size="86" font-weight="900" letter-spacing="-4">AVENTURAS.</text>
+  <text x="72" y="492" fill="#c5c5cf" font-family="Arial,sans-serif" font-size="22">Conheça o MarvelVerse: personagens, comunidade</text>
+  <text x="72" y="523" fill="#c5c5cf" font-family="Arial,sans-serif" font-size="22">e desafios em um app feito para fãs.</text>
+
+  <!-- Portrait Android app screen preview based on the project's mobile feed -->
+  <g filter="url(#shadow)">
+    <rect x="333" y="540" width="414" height="757" rx="51" fill="#050509" stroke="#585862" stroke-width="3"/>
+    <rect x="352" y="561" width="376" height="716" rx="32" fill="#0b0b12"/>
+    <g clip-path="url(#screen)">
+      <rect x="352" y="561" width="376" height="716" fill="#0b0b12"/>
+      <rect x="486" y="570" width="108" height="12" rx="6" fill="#050509"/>
+      <text x="370" y="600" fill="#fff" font-family="Arial,sans-serif" font-size="10" font-weight="700">9:41</text>
+      <g fill="#dedee4"><path d="M672 591h3v8h-3zm5-3h3v11h-3zm5-3h3v14h-3z"/><rect x="692" y="590" width="18" height="10" rx="3" fill="none" stroke="#dedee4" stroke-width="1.4"/></g>
+      <!-- app top bar from the actual app layout -->
+      <rect x="352" y="609" width="376" height="50" fill="#14141f"/>
+      <g stroke="#d7d7df" stroke-width="2" stroke-linecap="round"><path d="M371 625h17M371 632h17M371 639h17"/></g>
+      <text x="404" y="642" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="800" letter-spacing=".7">MARVELVERSE</text>
+      <circle cx="679" cy="634" r="13" fill="#1d1d2c"/><path d="M675 638v-7q4-7 8 0v7m-10 0h12m-7 2q1 3 2 0" fill="none" stroke="#d7d7df" stroke-width="1.4"/>
+      <circle cx="710" cy="634" r="13" fill="#1d1d2c"/><path d="M704 630h12v9h-12zm0 0l6 5 6-5" fill="none" stroke="#d7d7df" stroke-width="1.4"/>
+      <!-- feed title and filters -->
+      <text x="370" y="687" fill="#fff" font-family="Arial,sans-serif" font-size="21" font-weight="700">Feed</text>
+      <text x="370" y="704" fill="#aaaab6" font-family="Arial,sans-serif" font-size="10">Publicações da comunidade Marvel</text>
+      <text x="697" y="690" fill="#e62429" font-family="Arial,sans-serif" font-size="24" font-weight="700">↻</text>
+      <rect x="369" y="714" width="166" height="31" rx="10" fill="#e62429"/><text x="452" y="734" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle">Para você</text>
+      <rect x="542" y="714" width="168" height="31" rx="10" fill="#1d1d2c"/><text x="626" y="734" fill="#c6c6d0" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle">Seguindo</text>
+      <!-- story avatars -->
+      <g font-family="Arial,sans-serif" font-size="9" fill="#bdbdc8" text-anchor="middle">
+        <circle cx="393" cy="775" r="22" fill="#222331" stroke="#e62429" stroke-width="2"/><text x="393" y="779" fill="#fff" font-weight="700">+</text><text x="393" y="808">Sua história</text>
+        <circle cx="461" cy="775" r="22" fill="#293144" stroke="#e62429" stroke-width="2"/><text x="461" y="779" fill="#fff" font-size="8">TH</text><text x="461" y="808">Thor</text>
+        <circle cx="529" cy="775" r="22" fill="#4b3026" stroke="#e62429" stroke-width="2"/><text x="529" y="779" fill="#fff" font-size="8">IM</text><text x="529" y="808">Tony</text>
+        <circle cx="597" cy="775" r="22" fill="#34334a" stroke="#e62429" stroke-width="2"/><text x="597" y="779" fill="#fff" font-size="8">NW</text><text x="597" y="808">Natasha</text>
+        <circle cx="665" cy="775" r="22" fill="#394137" stroke="#e62429" stroke-width="2"/><text x="665" y="779" fill="#fff" font-size="8">HU</text><text x="665" y="808">Hulk</text>
+      </g>
+      <rect x="369" y="819" width="342" height="37" rx="10" fill="#1d1d2c" stroke="#292932"/><circle cx="387" cy="837" r="6" fill="none" stroke="#9999a6" stroke-width="1.5"/><path d="M392 842l5 5" stroke="#9999a6" stroke-width="1.5"/><text x="405" y="841" fill="#858592" font-family="Arial,sans-serif" font-size="10">Buscar posts ou personagens</text>
+      <!-- post structure follows the app: author, caption, image, likes, actions, comments -->
+      <rect x="369" y="865" width="342" height="370" rx="14" fill="#15151e" stroke="#292933"/>
+      <circle cx="390" cy="887" r="13" fill="#e62429"/><circle cx="390" cy="887" r="10" fill="#233047"/><path d="M383 891q7-12 14 0z" fill="#e5e7ed"/>
+      <text x="411" y="884" fill="#f5f5f7" font-family="Arial,sans-serif" font-size="11" font-weight="700">Capitão América</text>
+      <text x="411" y="899" fill="#92929e" font-family="Arial,sans-serif" font-size="9">agora · Nova York</text>
+      <g fill="#d4d4db"><circle cx="692" cy="882" r="2"/><circle cx="692" cy="889" r="2"/><circle cx="692" cy="896" r="2"/></g>
+      <text x="381" y="920" fill="#f0f0f3" font-family="Arial,sans-serif" font-size="10"><tspan font-weight="700">Capitão América</tspan><tspan>  Treino concluído. Próxima missão?</tspan></text>
+      <g clip-path="url(#postimg)">
+        <rect x="370" y="927" width="340" height="136" fill="url(#scene)"/>
+        <circle cx="635" cy="948" r="24" fill="#ffd79e" opacity=".85"/>
+        <path d="M370 1010l39-28 32 22 45-38 29 34 44-23 44 29 43-35 64 39v53H370z" fill="#252838"/>
+        <path d="M370 1030l52-29 35 25 40-32 46 29 46-30 44 33 44-27 33 22v42H370z" fill="#141923"/>
+        <g fill="#090d14"><path d="M380 1017h28v46h-28zM420 1010h34v53h-34zM467 1020h39v43h-39zM518 1006h35v57h-35zM565 1019h31v44h-31zM609 1008h41v55h-41zM662 1017h38v46h-38z"/></g>
+        <path d="M370 1048l340-26v41H370z" fill="#252a34"/>
+        <g transform="translate(550 1020) rotate(-12)"><circle r="25" fill="#17263a" stroke="#080d15" stroke-width="3"/><circle r="21" fill="url(#shield)" stroke="#f0f0f2" stroke-width="4"/><circle r="13" fill="#d4d7dd"/><circle r="9" fill="#193d66"/><path d="M0-6l2 5 5 1-4 3 1 6-4-4-5 4 2-6-5-3 6-1z" fill="#fff"/></g>
+      </g>
+      <text x="381" y="1077" fill="#f0b323" font-family="Arial,sans-serif" font-size="10">★ 128 curtidas · ver quem curtiu</text>
+      <g font-family="Arial,sans-serif" font-size="9" font-weight="700" text-anchor="middle">
+        <text x="409" y="1103" fill="#e62429">♥  Curtir</text><text x="486" y="1103" fill="#b8b8c7">▢  Comentar</text><text x="667" y="1103" fill="#b8b8c7">↗  Enviar</text>
+      </g>
+      <path d="M558 1088v15l5-3 5 3v-15z" fill="none" stroke="#b8b8c7" stroke-width="1.5" stroke-linejoin="round"/>
+      <text x="587" y="1103" fill="#b8b8c7" font-family="Arial,sans-serif" font-size="9" font-weight="700" text-anchor="middle">Salvar</text>
+      <path d="M377 1115h326" stroke="#292932" stroke-width="1"/>
+      <text x="381" y="1137" fill="#d9d9e0" font-family="Arial,sans-serif" font-size="9"><tspan font-weight="700">Tony Stark:</tspan><tspan> Boa, parceiro!</tspan></text>
+      <text x="381" y="1155" fill="#9696a2" font-family="Arial,sans-serif" font-size="9">Ver todos os 24 comentários</text>
+      <text x="381" y="1173" fill="#858592" font-family="Arial,sans-serif" font-size="8">PUBLICAÇÃO DE EXEMPLO · PERSONAGEM DA API MARVEL</text>
+      <path d="M352 1203h376" stroke="#292932" stroke-width="1.4"/>
+      <!-- project's five-item mobile footer -->
+      <g fill="#aaaab6" font-family="Arial,sans-serif" font-size="8" text-anchor="middle">
+        <path d="M390 1214h15v12h-15z" fill="none" stroke="#e62429" stroke-width="1.6"/><text x="397" y="1241" fill="#e62429">Início</text>
+        <circle cx="471" cy="1220" r="7" fill="none" stroke="#aaaab6" stroke-width="1.5"/><path d="M461 1230q10-12 20 0" fill="none" stroke="#aaaab6" stroke-width="1.5"/><text x="471" y="1241">Amigos</text>
+        <circle cx="540" cy="1220" r="13" fill="#e62429"/><path d="M540 1213v14m-7-7h14" stroke="#fff" stroke-width="2"/><text x="540" y="1241">Criar</text>
+        <path d="M601 1214h17v13h-17z" fill="none" stroke="#aaaab6" stroke-width="1.5"/><path d="M601 1215l8 6 9-6" fill="none" stroke="#aaaab6" stroke-width="1.4"/><text x="609" y="1241">Chats</text>
+        <circle cx="684" cy="1217" r="6" fill="none" stroke="#aaaab6" stroke-width="1.5"/><path d="M674 1231q10-12 20 0" fill="none" stroke="#aaaab6" stroke-width="1.5"/><text x="684" y="1241">Perfil</text>
+      </g>
+      <rect x="473" y="1264" width="134" height="4" rx="2" fill="#eeeef2" opacity=".8"/>
+    </g>
+  </g>
+  <text x="540" y="1330" fill="#aaaab5" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3" text-anchor="middle">CONHEÇA O PROJETO</text>
+</svg>

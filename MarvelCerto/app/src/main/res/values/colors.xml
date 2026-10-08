@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="marvel_red">#E62429</color>
+    <color name="marvel_red_dark">#9B0A0E</color>
+    <color name="marvel_gold">#F0B323</color>
+
+    <color name="ink">#0B0B12</color>
+    <color name="ink_2">#14141F</color>
+    <color name="ink_3">#1D1D2C</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B8B8C7</color>
+    <color name="text_muted">#7A7A8C</color>
+
+    <color name="divider">#22FFFFFF</color>
+</resources>

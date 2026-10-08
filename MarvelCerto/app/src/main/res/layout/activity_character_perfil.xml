@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/main" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ink"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Hero -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/imgHero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Hero Image"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnVoltar" android:focusable="true" android:contentDescription="Voltar"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:padding="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/btnFavorito" android:focusable="true" android:contentDescription="Adicionar aos favoritos"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_star_outline"
+                    android:tint="@color/text_primary"
+                    android:scaleType="fitCenter"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/btnCompartilhar" android:focusable="true" android:contentDescription="Compartilhar personagem"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:text="⇪"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtRole" android:text="PERSONAGEM MARVEL"
+                    android:textColor="#F0B323"
+                    android:textSize="10sp"
+                    android:letterSpacing=".18" />
+
+                <TextView
+                    android:id="@+id/txtNomePersonagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IRON MAN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="42sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNomeReal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anthony Edward &quot;Tony&quot; Stark"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Resumo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#14141F"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/summaryValue1" android:text="—"
+                    android:textColor="#E62429"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/summaryLabel1" android:text="FILMES"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/summaryValue2" android:text="—"
+                    android:textColor="#E62429"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/summaryLabel2" android:text="ESTREIA"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/summaryValue3" android:text="—"
+                    android:textColor="#E62429"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/summaryLabel3" android:text="VILÕES"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/summaryValue4" android:text="—"
+                    android:textColor="#E62429"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/summaryLabel4" android:text="ARMOR"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Biografia -->
+            <LinearLayout style="@style/ProfileDetailCard">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:id="@+id/txtBioTitle" android:text="▎ BIOGRAFIA"
+                android:textColor="#E62429"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBiografia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtEditora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtAlinhamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <!-- Aparência -->
+            <LinearLayout style="@style/ProfileDetailCard">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="▎ APARÊNCIA"
+                android:textColor="#E62429"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAparencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <!-- Trabalho e Conexões -->
+            <LinearLayout style="@style/ProfileDetailCard">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="▎ TRABALHO E AFILIAÇÕES"
+                android:textColor="#E62429"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtOcupacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtAfiliacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnCall" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="20dp" android:text="Iniciar chamada virtual" android:enabled="false" />
+            <TextView android:id="@+id/txtFilmographyTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp" android:text="▎ FILMOGRAFIA" android:textColor="@color/marvel_red" android:textSize="12sp" android:textStyle="bold" />
+            <TextView android:id="@+id/txtFilmographyInfo" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:textColor="@color/text_secondary" android:textSize="12sp" />
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:scrollbars="horizontal">
+                <LinearLayout android:id="@+id/filmography" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" />
+            </HorizontalScrollView>
+            <TextView android:id="@+id/txtOpponentsTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:textColor="@color/marvel_red" android:textSize="12sp" android:textStyle="bold" />
+            <LinearLayout android:id="@+id/opponents" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />            <!-- Estatísticas -->
+            <LinearLayout style="@style/ProfileDetailCard">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="▎ ESTATÍSTICAS"
+                android:textColor="#E62429"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEstatisticas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                
+                android:lineSpacingExtra="10dp"
+                
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
